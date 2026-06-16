@@ -1,0 +1,824 @@
+============================================================
+EPISODE SUMMARY
+============================================================
+Task:        reachgoal
+Started:     2026-05-30_14-29-03
+Outcome:     max_ticks_reached
+Total ticks: 21
+
+TICK LOG
+------------------------------------------------------------
+[Tick 1]
+  Position:  (1, 0) facing east
+  Inventory: []
+  Action:    MoveAction(direction='east', steps=4, memory_note='')
+  Result:    moved east (blocked after 1 steps)
+  Memory:    none
+[Tick 3]
+  Position:  (1, 2) facing south
+  Inventory: []
+  Action:    MoveAction(direction='south', steps=3, memory_note='')
+  Result:    moved south (blocked after 2 steps)
+  Memory:    none
+[Tick 4]
+  Position:  (0, 2) facing west
+  Inventory: []
+  Action:    MoveAction(direction='west', steps=2, memory_note='')
+  Result:    moved west (blocked after 1 steps)
+  Memory:    none
+[Tick 6]
+  Position:  (0, 4) facing south
+  Inventory: []
+  Action:    MoveAction(direction='south', steps=3, memory_note='')
+  Result:    moved south (blocked after 2 steps)
+  Memory:    none
+[Tick 7]
+  Position:  (1, 4) facing east
+  Inventory: []
+  Action:    MoveAction(direction='east', steps=1, memory_note='')
+  Result:    moved east x1
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing east
+  Inventory: []
+  Action:    MoveAction(direction='east', steps=3, memory_note='')
+  Result:    moved east x3
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    MoveAction(direction='south', steps=2, memory_note='')
+  Result:    moved south (blocked after 0 steps)
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: You are an agent navigating a 2D grid world. You can only see part of the world.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: TASK:
+Reach position (11, 11).
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR STATE:
+- Position: (0, 0)
+- Facing: south
+- Inventory: empty
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR MEMORY NOTES:
+No notes yet.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: WHAT YOU CAN SEE (? = not visible):
+v . ? ? ? ? ? ? ? ? ? ?
+R . R ? ? ? ? ? ? ? ? ?
+? ? R ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: ADJACENT CELLS:
+ north: not visible
+ east: empty
+ south: tall rock
+ west: not visible
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: AVAILABLE ACTIONS:
+- move:    {"action": "move", "direction": "<north|south|east|west>", "steps": <int>}
+           Use steps > 1 to move multiple cells in one action. e.g. {"action": "move", "direction": "east", "steps": 4}
+- pick_up: {"action": "pick_up"}
+- use_key: {"action": "use_key"} — only valid if you have the matching key in your inventory
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Rules:
+- You SHOULD use steps > 1 whenever moving more than one cell in the same direction — do not move one step at a time.
+- Cells marked ? are outside your current field of view — explore to reveal them.
+- You can only unlock a door you are directly facing from an adjacent cell.
+- Movement is blocked by rocks and locked doors.
+- Tall rocks and locked doors block vision.
+- To pick up a key, move onto its cell then use pick_up.
+- Do NOT attempt use_key unless the matching key is in your inventory.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Respond with a single JSON object. Nothing else.
+You are an agent navigating a 2D grid world. You can only see part of the world.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: TASK:
+Reach position (11, 11).
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR STATE:
+- Position: (1, 0)
+- Facing: east
+- Inventory: empty
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR MEMORY NOTES:
+No notes yet.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: WHAT YOU CAN SEE (? = not visible):
+? > R ? ? ? ? ? ? ? ? ?
+? . R ? ? ? ? ? ? ? ? ?
+? ? R ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: ADJACENT CELLS:
+ north: not visible
+ east: tall rock
+ south: empty
+ west: not visible
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: AVAILABLE ACTIONS:
+- move:    {"action": "move", "direction": "<north|south|east|west>", "steps": <int>}
+           Use steps > 1 to move multiple cells in one action. e.g. {"action": "move", "direction": "east", "steps": 4}
+- pick_up: {"action": "pick_up"}
+- use_key: {"action": "use_key"} — only valid if you have the matching key in your inventory
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Rules:
+- You SHOULD use steps > 1 whenever moving more than one cell in the same direction — do not move one step at a time.
+- Cells marked ? are outside your current field of view — explore to reveal them.
+- You can only unlock a door you are directly facing from an adjacent cell.
+- Movement is blocked by rocks and locked doors.
+- Tall rocks and locked doors block vision.
+- To pick up a key, move onto its cell then use pick_up.
+- Do NOT attempt use_key unless the matching key is in your inventory.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Respond with a single JSON object. Nothing else.
+You are an agent navigating a 2D grid world. You can only see part of the world.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: TASK:
+Reach position (11, 11).
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR STATE:
+- Position: (1, 2)
+- Facing: south
+- Inventory: empty
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR MEMORY NOTES:
+No notes yet.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: WHAT YOU CAN SEE (? = not visible):
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+. v R ? ? ? ? ? ? ? ? ?
+. R R ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: ADJACENT CELLS:
+ north: not visible
+ east: tall rock
+ south: tall rock
+ west: empty
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: AVAILABLE ACTIONS:
+- move:    {"action": "move", "direction": "<north|south|east|west>", "steps": <int>}
+           Use steps > 1 to move multiple cells in one action. e.g. {"action": "move", "direction": "east", "steps": 4}
+- pick_up: {"action": "pick_up"}
+- use_key: {"action": "use_key"} — only valid if you have the matching key in your inventory
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Rules:
+- You SHOULD use steps > 1 whenever moving more than one cell in the same direction — do not move one step at a time.
+- Cells marked ? are outside your current field of view — explore to reveal them.
+- You can only unlock a door you are directly facing from an adjacent cell.
+- Movement is blocked by rocks and locked doors.
+- Tall rocks and locked doors block vision.
+- To pick up a key, move onto its cell then use pick_up.
+- Do NOT attempt use_key unless the matching key is in your inventory.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Respond with a single JSON object. Nothing else.
+ou are an agent navigating a 2D grid world. You can only see part of the world.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: TASK:
+Reach position (11, 11).
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR STATE:
+- Position: (0, 2)
+- Facing: west
+- Inventory: empty
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR MEMORY NOTES:
+No notes yet.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: WHAT YOU CAN SEE (? = not visible):
+? ? ? ? ? ? ? ? ? ? ? ?
+R ? ? ? ? ? ? ? ? ? ? ?
+< ? ? ? ? ? ? ? ? ? ? ?
+. ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: ADJACENT CELLS:
+ north: tall rock
+ east: not visible
+ south: empty
+ west: not visible
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: AVAILABLE ACTIONS:
+- move:    {"action": "move", "direction": "<north|south|east|west>", "steps": <int>}
+           Use steps > 1 to move multiple cells in one action. e.g. {"action": "move", "direction": "east", "steps": 4}
+- pick_up: {"action": "pick_up"}
+- use_key: {"action": "use_key"} — only valid if you have the matching key in your inventory
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Rules:
+- You SHOULD use steps > 1 whenever moving more than one cell in the same direction — do not move one step at a time.
+- Cells marked ? are outside your current field of view — explore to reveal them.
+- You can only unlock a door you are directly facing from an adjacent cell.
+- Movement is blocked by rocks and locked doors.
+- Tall rocks and locked doors block vision.
+- To pick up a key, move onto its cell then use pick_up.
+- Do NOT attempt use_key unless the matching key is in your inventory.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Respond with a single JSON object. Nothing else.
+You are an agent navigating a 2D grid world. You can only see part of the world.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: TASK:
+Reach position (11, 11).
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR STATE:
+- Position: (0, 4)
+- Facing: south
+- Inventory: empty
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR MEMORY NOTES:
+No notes yet.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: WHAT YOU CAN SEE (? = not visible):
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+v . ? ? ? ? ? ? ? ? ? ?
+R R R ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: ADJACENT CELLS:
+ north: not visible
+ east: empty
+ south: tall rock
+ west: not visible
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: AVAILABLE ACTIONS:
+- move:    {"action": "move", "direction": "<north|south|east|west>", "steps": <int>}
+           Use steps > 1 to move multiple cells in one action. e.g. {"action": "move", "direction": "east", "steps": 4}
+- pick_up: {"action": "pick_up"}
+- use_key: {"action": "use_key"} — only valid if you have the matching key in your inventory
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Rules:
+- You SHOULD use steps > 1 whenever moving more than one cell in the same direction — do not move one step at a time.
+- Cells marked ? are outside your current field of view — explore to reveal them.
+- You can only unlock a door you are directly facing from an adjacent cell.
+- Movement is blocked by rocks and locked doors.
+- Tall rocks and locked doors block vision.
+- To pick up a key, move onto its cell then use pick_up.
+- Do NOT attempt use_key unless the matching key is in your inventory.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Respond with a single JSON object. Nothing else.
+You are an agent navigating a 2D grid world. You can only see part of the world.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: TASK:
+Reach position (11, 11).
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR STATE:
+- Position: (1, 4)
+- Facing: east
+- Inventory: empty
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR MEMORY NOTES:
+No notes yet.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: WHAT YOU CAN SEE (? = not visible):
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? R R R ? ? ? ? ? ? ? ?
+? > . . . R ? ? ? ? ? ?
+? R R . R ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: ADJACENT CELLS:
+ north: tall rock
+ east: empty
+ south: tall rock
+ west: not visible
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: AVAILABLE ACTIONS:
+- move:    {"action": "move", "direction": "<north|south|east|west>", "steps": <int>}
+           Use steps > 1 to move multiple cells in one action. e.g. {"action": "move", "direction": "east", "steps": 4}
+- pick_up: {"action": "pick_up"}
+- use_key: {"action": "use_key"} — only valid if you have the matching key in your inventory
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Rules:
+- You SHOULD use steps > 1 whenever moving more than one cell in the same direction — do not move one step at a time.
+- Cells marked ? are outside your current field of view — explore to reveal them.
+- You can only unlock a door you are directly facing from an adjacent cell.
+- Movement is blocked by rocks and locked doors.
+- Tall rocks and locked doors block vision.
+- To pick up a key, move onto its cell then use pick_up.
+- Do NOT attempt use_key unless the matching key is in your inventory.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Respond with a single JSON object. Nothing else.
+You are an agent navigating a 2D grid world. You can only see part of the world.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: TASK:
+Reach position (11, 11).
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR STATE:
+- Position: (4, 4)
+- Facing: east
+- Inventory: empty
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR MEMORY NOTES:
+No notes yet.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: WHAT YOU CAN SEE (? = not visible):
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? R R ? ? ? ? ? ?
+? ? ? ? > R ? ? ? ? ? ?
+? ? ? ? R R ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: ADJACENT CELLS:
+ north: tall rock
+ east: tall rock
+ south: tall rock
+ west: not visible
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: AVAILABLE ACTIONS:
+- move:    {"action": "move", "direction": "<north|south|east|west>", "steps": <int>}
+           Use steps > 1 to move multiple cells in one action. e.g. {"action": "move", "direction": "east", "steps": 4}
+- pick_up: {"action": "pick_up"}
+- use_key: {"action": "use_key"} — only valid if you have the matching key in your inventory
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Rules:
+- You SHOULD use steps > 1 whenever moving more than one cell in the same direction — do not move one step at a time.
+- Cells marked ? are outside your current field of view — explore to reveal them.
+- You can only unlock a door you are directly facing from an adjacent cell.
+- Movement is blocked by rocks and locked doors.
+- Tall rocks and locked doors block vision.
+- To pick up a key, move onto its cell then use pick_up.
+- Do NOT attempt use_key unless the matching key is in your inventory.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Respond with a single JSON object. Nothing else.
+You are an agent navigating a 2D grid world. You can only see part of the world.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: TASK:
+Reach position (11, 11).
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR STATE:
+- Position: (4, 4)
+- Facing: south
+- Inventory: empty
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: YOUR MEMORY NOTES:
+No notes yet.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: WHAT YOU CAN SEE (? = not visible):
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? . v R ? ? ? ? ? ?
+? ? R . R R ? ? ? ? ? ?
+? ? R ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+? ? ? ? ? ? ? ? ? ? ? ?
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: ADJACENT CELLS:
+ north: not visible
+ east: tall rock
+ south: tall rock
+ west: empty
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: AVAILABLE ACTIONS:
+- move:    {"action": "move", "direction": "<north|south|east|west>", "steps": <int>}
+           Use steps > 1 to move multiple cells in one action. e.g. {"action": "move", "direction": "east", "steps": 4}
+- pick_up: {"action": "pick_up"}
+- use_key: {"action": "use_key"} — only valid if you have the matching key in your inventory
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Rules:
+- You SHOULD use steps > 1 whenever moving more than one cell in the same direction — do not move one step at a time.
+- Cells marked ? are outside your current field of view — explore to reveal them.
+- You can only unlock a door you are directly facing from an adjacent cell.
+- Movement is blocked by rocks and locked doors.
+- Tall rocks and locked doors block vision.
+- To pick up a key, move onto its cell then use pick_up.
+- Do NOT attempt use_key unless the matching key is in your inventory.
+  Memory:    none
+[Tick 10]
+  Position:  (4, 4) facing south
+  Inventory: []
+  Action:    invalid
+  Result:    parse_error: LLM output is not valid JSON: Expecting value: line 1 column 1 (char 0)
+Raw: Respond with a single JSON object. Nothing else.{"action":"move","direction":"west","steps":1}
+  Memory:    none
+[Tick 12]
+  Position:  (2, 4) facing west
+  Inventory: []
+  Action:    MoveAction(direction='west', steps=2, memory_note='')
+  Result:    moved west x2
+  Memory:    none
+[Tick 12]
+  Position:  (2, 4) facing south
+  Inventory: []
+  Action:    MoveAction(direction='south', steps=2, memory_note='')
+  Result:    moved south (blocked after 0 steps)
+  Memory:    none
+[Tick 13]
+  Position:  (3, 4) facing east
+  Inventory: []
+  Action:    MoveAction(direction='east', steps=1, memory_note='')
+  Result:    moved east x1
+  Memory:    none
+[Tick 14]
+  Position:  (4, 4) facing east
+  Inventory: []
+  Action:    MoveAction(direction='east', steps=1, memory_note='')
+  Result:    moved east x1
+  Memory:    none
+[Tick 16]
+  Position:  (2, 4) facing west
+  Inventory: []
+  Action:    MoveAction(direction='west', steps=2, memory_note='')
+  Result:    moved west x2
+  Memory:    none
+[Tick 16]
+  Position:  (2, 4) facing south
+  Inventory: []
+  Action:    MoveAction(direction='south', steps=1, memory_note='')
+  Result:    moved south (blocked after 0 steps)
+  Memory:    none
+[Tick 17]
+  Position:  (3, 4) facing east
+  Inventory: []
+  Action:    MoveAction(direction='east', steps=1, memory_note='')
+  Result:    moved east x1
+  Memory:    none
+[Tick 19]
+  Position:  (3, 6) facing south
+  Inventory: []
+  Action:    MoveAction(direction='south', steps=2, memory_note='')
+  Result:    moved south x2
+  Memory:    none
+[Tick 21]
+  Position:  (3, 8) facing south
+  Inventory: []
+  Action:    MoveAction(direction='south', steps=2, memory_note='')
+  Result:    moved south x2
+  Memory:    none

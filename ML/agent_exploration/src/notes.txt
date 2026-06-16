@@ -1,0 +1,58 @@
+
+llm-agent-world/
+│
+├── README.md
+├── pyproject.toml
+├── .env
+├── .gitignore
+│
+├── configs/
+│   ├── world.yaml
+│   └── agent.yaml
+│
+├── src/
+│   ├── main.py                 # Entry point
+│   │
+│   ├── environment/
+│   │   ├── world.py            # World state
+│   │   ├── grid.py             # 2D grid implementation
+│   │   ├── objects.py          # Key, door, treasure, etc.
+│   │   └── tasks.py            # Goal definitions
+│   │
+│   ├── agent/
+│   │   ├── harness.py          # Main observe-think-act loop
+│   │   ├── observation.py      # State -> prompt conversion
+│   │   ├── actions.py          # Action definitions
+│   │   ├── parser.py           # LLM output -> action
+│   │   └── memory.py           # Optional short-term memory
+│   │
+│   ├── llm/
+│   │   ├── client.py           # OpenAI/Anthropic wrapper
+│   │   ├── prompts.py
+│   │   └── schemas.py          # Structured outputs
+│   │
+│   ├── simulation/
+│   │   ├── runner.py           # Episode execution
+│   │   └── evaluator.py        # Success/failure checks
+│   │
+│   └── utils/
+│       ├── logging.py
+│       └── rendering.py
+│
+├── tests/
+│   ├── test_world.py
+│   ├── test_actions.py
+│   ├── test_parser.py
+│   └── test_tasks.py
+│
+├── examples/
+│   ├── find_key_and_open_door/
+│   │   ├── run.log
+│   │   └── config.yaml
+│   │
+│   └── go_to_red_cube/
+│       ├── run.log
+│       └── config.yaml
+│
+└── logs/
+    └── episodes/

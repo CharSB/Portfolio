@@ -1,0 +1,70 @@
+============================================================
+EPISODE SUMMARY
+============================================================
+Task:        reachgoal
+Started:     2026-05-30_14-00-13
+Outcome:     success
+Total ticks: 20
+
+TICK LOG
+------------------------------------------------------------
+[Tick 3]
+  Position:  (0, 3) facing south
+  Inventory: []
+  Action:    MoveAction(direction='south', steps=3, memory_note='')
+  Result:    moved south x3
+  Memory:    none
+[Tick 4]
+  Position:  (1, 3) facing east
+  Inventory: []
+  Action:    MoveAction(direction='east', steps=1, memory_note='')
+  Result:    moved east x1
+  Memory:    none
+[Tick 6]
+  Position:  (1, 5) facing south
+  Inventory: []
+  Action:    MoveAction(direction='south', steps=2, memory_note='')
+  Result:    moved south x2
+  Memory:    none
+[Tick 7]
+  Position:  (1, 5) facing south
+  Inventory: ['key_red']
+  Action:    PickUpAction(memory_note='')
+  Result:    picked_up key_red
+  Memory:    none
+[Tick 10]
+  Position:  (4, 5) facing east
+  Inventory: ['key_red']
+  Action:    MoveAction(direction='east', steps=3, memory_note='')
+  Result:    moved east x3
+  Memory:    none
+[Tick 12]
+  Position:  (6, 5) facing east
+  Inventory: ['key_red']
+  Action:    MoveAction(direction='east', steps=2, memory_note='')
+  Result:    moved east x2
+  Memory:    none
+[Tick 15]
+  Position:  (9, 5) facing east
+  Inventory: ['key_red']
+  Action:    MoveAction(direction='east', steps=3, memory_note='')
+  Result:    moved east x3
+  Memory:    none
+[Tick 18]
+  Position:  (9, 8) facing south
+  Inventory: ['key_red']
+  Action:    MoveAction(direction='south', steps=4, memory_note='')
+  Result:    moved south (blocked after 3 steps)
+  Memory:    none
+[Tick 19]
+  Position:  (9, 8) facing south
+  Inventory: []
+  Action:    UseKeyAction(memory_note='')
+  Result:    door unlocked
+  Memory:    none
+[Tick 20]
+  Position:  (9, 9) facing south
+  Inventory: []
+  Action:    MoveAction(direction='south', steps=1, memory_note='')
+  Result:    moved south x1
+  Memory:    none

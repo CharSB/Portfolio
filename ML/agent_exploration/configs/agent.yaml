@@ -1,0 +1,4 @@
+provider: manual
+model: none
+max_ticks: 100
+temperature: 0.3
