@@ -1,5 +1,5 @@
 # Portfolio
-A small portfolio of Works made by me
+A small portfolio of works made by me.
 
 ## Dolphin Acoustics
 
